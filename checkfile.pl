@@ -2,7 +2,8 @@ use strict;
 use warnings;
 
 sub main {
-	if(-f 'D:\xampp\cgi-bin\perlcoding\perlcode\checkfile.pl') {
+	my $file = 'D:\xampp\cgi-bin\perlcoding\perlcode\checkfile.pl'; 
+	if(-f $file ) {
 		print "File founded";
 	}
 	else {
