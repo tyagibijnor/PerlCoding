@@ -12,7 +12,7 @@ sub main {
 	while( my $line = <INPUT>){
 		
 		if($line =~ /\btest\b/) {
-			$line =~ s/TEST/testing/ig;
+			$line =~ s/TEST/Testing/ig;
 			print OUTPUT "$line";		
 		}
 		
