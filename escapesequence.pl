@@ -11,8 +11,8 @@ sub main {
 	
 	my $text = 'I have 2 kids';
 	
-	if ($text =~ /(\d+)/) {
-		print "found : '$1'\n";
+	if ($text =~ /(h\S*)/) {
+		print "Found : '$1'\n";
 	} 
 }
 
