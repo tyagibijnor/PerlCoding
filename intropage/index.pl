@@ -65,8 +65,8 @@ Content-Type: text/html
                 <div class="container">
                     <div class="banner_text_wthree">
                         <div class="d-flex">
-                            <h1>hello </h1>
-                            <h2>&nbsp;i'm Navneet Tyagi</h2>
+                            <h1>hi </h1>
+                            <h2>&nbsp;i'm Navneet</h2>
                         </div>
                         <div id="text" class="banner_text_w3ls my-md-5 my-3"></div>
                         </div>
