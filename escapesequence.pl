@@ -10,8 +10,9 @@ sub main {
 	# \w alphanumeric
 	
 	my $text = 'I have 2 kids';
+	my $text1 = 'TTEsfdd4554.';
 	
-	if ($text =~ /(h\S*)/) {
+	if ($text1 =~ /(\w*)/) {
 		print "Found : '$1'\n";
 	} 
 }
