@@ -11,7 +11,8 @@ sub main {
 	}
 	while (my $line = <INPUT>)
 	{
-		print "$line";
+		my @values = split ',',$line;
+		print $values[0]."\n";
 		
 	}	
 }
