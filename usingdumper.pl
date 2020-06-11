@@ -24,7 +24,7 @@ sub main {
 	close INPUT;
 	
 	foreach my $l(@lines) {
-		print $l."\n";
+		print $l. "\n";
 	}
 }
 
