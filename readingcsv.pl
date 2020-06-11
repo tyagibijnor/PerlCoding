@@ -5,8 +5,10 @@ $|=1;
 
 sub main {
 	
-	my $input = 'test.csv';
-	
+	my $file = 'test.csv';
+	unless(open(INPUT, $file)) {
+		die "\n can not open file $file \n";
+	}	
 }
 
 main();
