@@ -64,10 +64,10 @@ Content-Type: text/html
             <div class="layer">
                 <div class="container">
                     <div class="banner_text_wthree">
-                        <div class="d-flex">
-                            <h1>hi </h1>
-                            <h2>&nbsp;i'm Navneet</h2>
+                        <div class="d-flex neons">
+                        <h1>hi i'm Navneet</h1>
                         </div>
+            
                         <div id="text" class="banner_text_w3ls my-md-5 my-3"></div>
                         </div>
                 </div>
