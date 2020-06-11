@@ -12,11 +12,13 @@ sub main {
 	<INPUT>;
 	while (my $line = <INPUT>)
 	{
+		chop $line; 
 		my @values = split ',',$line;
 		#print $values[2]."\n";
 		print Dumper(@values);
 		
 	}	
+	close INPUT;
 }
 
 main();
