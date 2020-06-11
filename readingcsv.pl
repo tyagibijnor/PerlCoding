@@ -9,6 +9,7 @@ sub main {
 	unless(open(INPUT, $file)) {
 		die "\n can not open file $file \n";
 	}
+	<INPUT>;
 	while (my $line = <INPUT>)
 	{
 		my @values = split ',',$line;
