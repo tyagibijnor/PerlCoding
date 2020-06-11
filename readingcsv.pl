@@ -12,6 +12,7 @@ sub main {
 	while (my $line = <INPUT>)
 	{
 		print "$line";
+		
 	}	
 }
 
