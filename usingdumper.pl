@@ -13,7 +13,8 @@ sub main {
 	while (my $line = <INPUT>)
 	{
 		my @values = split ',',$line;
-		print $values[2]."\n";
+		#print $values[2]."\n";
+		print Dumper(@values);
 		
 	}	
 }
