@@ -4,9 +4,12 @@ use Data::Dumper;
 
 $|=1;
 
-my %temp = (
+my %month = (
 "Jan"=>1,
-"Feb"=>2);
+"Feb"=>2,
+"Mar"=>3);
+
+print $month{'Jan'};
 
 
 
