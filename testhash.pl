@@ -18,9 +18,9 @@ my %month = (
 "Nov"=>11,
 "Dec"=>12);
 
-print $month{'Jan'};
-print "\n";
-print $month{'Dec'};
+#print $month{'Jan'};
+#print "\n";
+#print $month{'Dec'};
 
 my %wkdays = (
 1=>"Sun",
@@ -31,4 +31,11 @@ my %wkdays = (
 6=>"Fri",
 7=>"Sat");
 
-print "\n".$wkdays{1};
+#print "\n".$wkdays{1};
+
+my @month = keys %month;
+#print @month;
+for my $months(@month) {
+	my $value = $month{$months}."\n";
+	print "tt-".$value;
+}
