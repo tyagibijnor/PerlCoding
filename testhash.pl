@@ -39,3 +39,7 @@ for my $months(@month) {
 	my $value = $month{$months}."\n";
 	print "$months : ".$value;
 }
+
+while (my ($key,$valu) = each %wkdays){
+	print "$key : " . "$valu \n";
+}
