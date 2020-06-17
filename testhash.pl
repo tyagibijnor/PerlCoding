@@ -37,5 +37,5 @@ my @month = keys %month;
 #print @month;
 for my $months(@month) {
 	my $value = $month{$months}."\n";
-	print "tt-".$value;
+	print "$months : ".$value;
 }
