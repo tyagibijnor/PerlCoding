@@ -17,6 +17,14 @@ sub main {
  while (my ($key,$value) = each %foods ) {
  	print "$key : $value \n";
  }	
+ 
+ my @animals = keys %foods;
+ print "Foraeach Result \n";
+ foreach my $k(@animals) {
+ 	my $value = $foods{$k};
+ 	print "$k  : $value\n";
+ }
+ 
 }
 
 main();
