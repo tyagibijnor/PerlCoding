@@ -11,6 +11,11 @@ sub main {
 	}
 	<INPUT>;
 	my @data;
+	while ( my $line = <INPUT>){
+		chomp $line;
+		my ($name, $code, $profile) = split /\s",\s"/,$line;
+		my $value 
+	}
 }
 
 main();
