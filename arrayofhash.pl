@@ -12,9 +12,13 @@ my %hash1 = (
 
 my @hash2;
 push @hash2,\%hash1;
-print Dumper(@hash2);
-print %hash1; 
+$hash2[1] = \%hash1;
+#print Dumper(@hash2);
+#print %hash1;
+print $hash2[0]{"cow"}."\n";
+print $hash2[1]{"dog"}; 
 }
+
 
 main();
 
