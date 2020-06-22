@@ -14,12 +14,15 @@ sub main {
 	while ( my $line = <INPUT>){
 		chomp $line;
 		my ($name, $code, $profile) = split /\s",\s"/,$line;
+		
 		my %result = (
 		"Name"=>$name,
 		"Code"=>$code,
-		"Profile"=>$profile); 
+		"Profile"=>$profile,);
+		push @data, \%result; 
 	}
-	print $result{};
+	
+	print Dumper(%result);
 }
 
 main();
