@@ -20,7 +20,8 @@ sub main {
 	}
 	close INPUT;
 	foreach my $l(@data) {
-		print Dumper($l);
+# 		print Dumper($l);
+		print $l->{"Name"}."\n";
 	}
 }
 
