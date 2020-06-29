@@ -1,20 +1,17 @@
 use strict;
 use warnings;
-
+use Data::Dumper;
 $|=1;
-
 sub main {
-	
 	my $file = 'test.csv';
 	unless(open(INPUT, $file)) {
-		die "\n can not open file $file \n";
+	die "\n can not open file $file \n";
 	}
 	<INPUT>;
 	my @data;
 	while ( my $line = <INPUT>){
 		chomp $line;
 		my ($name, $code, $profile) = split /\s",\s"/,$line;
-		
 		my %result = (
 		"Name"=>$name,
 		"Code"=>$code,
@@ -22,8 +19,9 @@ sub main {
 		push @data, \%result; 
 	}
 	close INPUT;
-
-	#print Dumper(%result);
+	foreach my $l(@data) {
+		print Dumper($l);
+	}
 }
 
 main();
