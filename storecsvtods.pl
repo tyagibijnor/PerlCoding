@@ -21,8 +21,9 @@ sub main {
 		"Profile"=>$profile,);
 		push @data, \%result; 
 	}
-	
-	print Dumper(%result);
+	close INPUT;
+
+	#print Dumper(%result);
 }
 
 main();
