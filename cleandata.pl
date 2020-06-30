@@ -21,8 +21,11 @@ sub main {
 	}
 	close INPUT;
 	foreach my $l(@data) {
-		print $l->{"Name"}." , \n";
+		print $l->{"Name"}." \n";
 		print $l->{"Code"}."\n";
+		print $l->{"Profile"}."\n";
+		print "*******\n\n";
+		
 		
  		if($l->{"Name"} eq "Navneet"){
 		}
