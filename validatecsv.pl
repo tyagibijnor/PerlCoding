@@ -11,7 +11,11 @@ sub main {
 	my @data;
 	while ( my $line = <INPUT>){
 		chomp $line;
-		my ($name, $code, $profile) = split(/,/, $line);
+		my @values = split(/,/, $line);
+		if (scalar(@values)<3) {
+			print "G";
+		}
+		my ($name, $code, $profile) = @values;
 		my %result = (
 		"Name"=>$name,
 		"Code"=>$code,
