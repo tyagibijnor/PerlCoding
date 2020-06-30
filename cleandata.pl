@@ -24,7 +24,7 @@ sub main {
 		print $l->{"Name"}." \n";
 		print $l->{"Code"}."\n";
 		print $l->{"Profile"}."\n";
-		print "*******\n\n";
+		print "*******\n";
 		
 		
  		if($l->{"Name"} eq "Navneet"){
