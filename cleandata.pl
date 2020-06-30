@@ -12,7 +12,7 @@ sub main {
 	while ( my $line = <INPUT>){
 		chomp $line;
 		my @values = split(/,/, $line);
-		my ($name, $code, $profile) = @values;
+		my ($name,$profile, $code ) = @values;
 		my %result = (
 		"Name"=>$name,
 		"Code"=>$code,
@@ -21,10 +21,10 @@ sub main {
 	}
 	close INPUT;
 	foreach my $l(@data) {
- 		#print Dumper($l);
-		print $l->{"Name"}."\n";
-		if($l->{"Name"} eq "Navneet"){
-			print "found";
+		print $l->{"Name"}." , \n";
+		print $l->{"Code"}."\n";
+		
+ 		if($l->{"Name"} eq "Navneet"){
 		}
 	}
 }
