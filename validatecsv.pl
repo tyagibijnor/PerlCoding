@@ -24,7 +24,7 @@ sub main {
  		#print Dumper($l);
 		print $l->{"Name"}."\n";
 		if($l->{"Name"} eq "Navneet"){
-			print "fount";
+			print "found";
 		}
 	}
 }
