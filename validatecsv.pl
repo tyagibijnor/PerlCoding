@@ -12,9 +12,6 @@ sub main {
 	while ( my $line = <INPUT>){
 		chomp $line;
 		my @values = split(/,/, $line);
-		if (scalar(@values)<3) {
-			print "G";
-		}
 		my ($name, $code, $profile) = @values;
 		my %result = (
 		"Name"=>$name,
@@ -26,6 +23,9 @@ sub main {
 	foreach my $l(@data) {
  		#print Dumper($l);
 		print $l->{"Name"}."\n";
+		if($l->{"Name"} eq "Navneet"){
+			print "fount";
+		}
 	}
 }
 
